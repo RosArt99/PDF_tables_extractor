@@ -122,16 +122,13 @@ root.geometry("450x220")
 pdf_path_var = tk.StringVar()
 pages_var = tk.StringVar()
 
-# PDF selection
 tk.Label(root, text="PDF File:").pack(pady=5)
 tk.Entry(root, textvariable=pdf_path_var, width=50).pack()
 tk.Button(root, text="Browse", command=select_pdf).pack(pady=5)
 
-# Pages input
 tk.Label(root, text="Pages (example: 33-34 or 33,34):").pack(pady=5)
 tk.Entry(root, textvariable=pages_var, width=20).pack()
 
-# Extract button
 tk.Button(root, text="Extract Tables", command=extract_tables).pack(pady=15)
 
 root.mainloop()
